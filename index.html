@@ -11,34 +11,36 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1><img src="imagenes/Logo.png" alt="Logo de Alura"></h1>
-    </header>
-    <main>
-        <section>
-            <textarea id="texto-insertado" placeholder="Ingrese el texto aqui" autofocus></textarea>
-            <div class="nota">
-                <p><span>!</span>Solo letras minúsculas y sin acentos</p>
-            </div>
-            <div class="botones">
-                <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
-                <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
-              </div>
-        </section>
-        <section>
-            <div id="bloque-copiar" class="copiar">
-                <textarea id="texto" autofocus readonly></textarea>
-                <div>
-                    <button class="btn-copiar" onclick="copiarTexto()">Copiar</button>
+    <div class="contenido">
+        <header>
+            <h1><img src="imagenes/Logo.png" alt="Logo de Alura"></h1>
+        </header>
+        <main>
+            <section>
+                <textarea id="texto-insertado" placeholder="Ingrese el texto aqui" autofocus></textarea>
+                <div class="nota">
+                    <p><span>!</span> Solo letras minúsculas y sin acentos</p>
                 </div>
-            </div>
-            <div id="seccion-imagen">
-                <img src="imagenes/imagen.png" alt="Imagen de candado transparente rodeado de codigo" />
-                <h2>Ningún mensaje fue encontrado</h2>
-                <p>Ingresa el texto que desees encriptar o desencriptar.</p>
-              </div>
-        </section>
-    </main>
+                <div class="botones">
+                    <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                    <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+                  </div>
+            </section>
+            <section>
+                <div id="bloque-copiar" class="copiar">
+                    <textarea class="texto-a-copiar" autofocus readonly></textarea>
+                    <div>
+                        <button class="btn-copiar" onclick="copiarTexto()">Copiar</button>
+                    </div>
+                </div>
+                <div id="seccion-imagen">
+                    <img class="imagen" src="imagenes/imagen.png" alt="Imagen de candado transparente rodeado de codigo" />
+                    <h2 class="subtitulo-imagen">Ningún mensaje fue encontrado</h2>
+                    <p class="parrafo-imagen">Ingresa el texto que desees encriptar o desencriptar.</p>
+                  </div>
+            </section>
+        </main>
+    </div>
     <footer>
         <p>Creado por: Manuel Gomez - México 2024</p>
         <a href="https://github.com/REKORD7">
