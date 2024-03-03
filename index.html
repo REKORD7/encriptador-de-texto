@@ -16,8 +16,8 @@
             <h1><img src="imagenes/Logo.png" alt="Logo de Alura"></h1>
         </header>
         <main>
-            <section>
-                <textarea id="texto-insertado" placeholder="Ingrese el texto aqui" autofocus></textarea>
+            <section class="responsivo">
+                <textarea id="texto-insertado" class="responsivo" placeholder="Ingrese el texto aqui" autofocus></textarea>
                 <div class="nota">
                     <p><span>!</span> Solo letras minúsculas y sin acentos</p>
                 </div>
@@ -26,9 +26,9 @@
                     <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
                   </div>
             </section>
-            <section>
-                <div id="seccion-copiar" class="copiar">
-                    <textarea id="texto-a-copiar" autofocus readonly></textarea>
+            <section class="responsivo">
+                <div id="seccion-copiar" class="copiar responsivo">
+                    <textarea id="texto-a-copiar" class="responsivo" autofocus readonly></textarea>
                     <div>
                         <button class="btn-copiar" onclick="btnCopiar()">Copiar</button>
                     </div>
