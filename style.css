@@ -4,7 +4,7 @@
     /*--light-blue-100*/
     --color-fondo: #f3f5fc;
     /*--dark-blue-500*/
-    --color-footer: #052051;
+    --color-footer: #757575;
     /*--gray-100*/
     --sombreado: #ced4da;
     /*--gray-500*/
@@ -127,6 +127,11 @@ span{
     gap: 1.5rem;
 }
 
+.candados{
+    display: inline-block;
+    max-height: 1em;
+}
+
 button{
     transition: transform 0.2s ease;
 }
@@ -155,6 +160,7 @@ button:hover {
 }
 
 #texto-a-copiar{
+    padding-top: 3em;
     width: 100%;
     height: 86%;
     font-size: 1.5em;
@@ -222,6 +228,10 @@ footer img {
       gap: 2rem;
     }
 
+    #texto-a-copiar {
+        padding-top: 0;
+    }
+
     .responsivo {
     width: 100%;
     padding: 0;
@@ -254,6 +264,10 @@ footer img {
         flex-direction: column;
         width: 100%;
         margin-top: 1rem;
+    }
+
+    main > :nth-child(2) > div {
+        font-size: 0.7rem;
     }
 
     .botones button,
